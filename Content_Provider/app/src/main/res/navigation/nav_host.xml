@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/fragmentContacts"
+        android:name="com.example.content_provider.contacts.ui.FragmentContacts"
+        android:label="FragmentContacts"
+        tools:layout="@layout/contacts_fragment">
+        <action
+            android:id="@+id/action_fragmentContacts_to_detailInfoContactFragment"
+            app:destination="@id/detailInfoContactFragment" />
+        <action
+            android:id="@+id/action_fragmentContacts_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailInfoContactFragment"
+        android:name="com.example.content_provider.contacts.ui.DetailInfoContactFragment"
+        android:label="DetailInfoContactFragment"
+        tools:layout="@layout/item_contact_info_detail">
+        <argument
+            android:name="idContact"
+            app:argType="long" />
+        <argument
+            android:name="nameContact"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.example.content_provider.contacts.ui.AddContactFragment"
+        android:label="AddContactFragment"
+        tools:layout="@layout/add_contact_fragment" />
+    <fragment
+        android:id="@+id/fileSharingFragment"
+        android:name="com.example.content_provider.shared_files.data_file.FileSharingFragment"
+        android:label="FileSharingFragment"
+        tools:layout="@layout/fragment_sharing_file" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.content_provider.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_fileSharingFragment"
+            app:destination="@id/fileSharingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentContacts"
+            app:destination="@id/fragmentContacts" />
+    </fragment>
+</navigation>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Content_Provider</string>
+    <string name="name_fragment">List contacts</string>
+    <string name="name_main_fragment">Homework</string>
+    <string name="name_share_fragment">Download and share file</string>
+    <string name="denied_permission">Доступ к чтению контактов запрещен</string>
+    <string name="never_permission">Разрешите доступ к чтению контактов в настройках приложения</string>
+    <string name="input_name">Имя</string>
+    <string name="lastname_contact">Фамилия</string>
+    <string name="phone_contact">Телефон</string>
+    <string name="email">Email (необязательно)</string>
+    <string name="add_contact">Добавить контакт</string>
+    <string name="remove_contact">Remove contact</string>
+    <string name="detail_info">Detail info contact</string>
+    <string name="add_contact_toolbar">Adding a contact</string>
+    <string name="sharing_file">Share file</string>
+    <string name="download_successfully">Файл успешно загружен</string>
+    <string name="file_already_download">Файл уже был скачан</string>
+    <string name="input_link">Input link for download files</string>
+    <string name="download">Download</string>
+    <string name="contacts">Contacts</string>
+    <string name="sharing_fragment">Sharing fragment</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Test App</string>
+    <string name="get_list_courses">Получить список курсов</string>
+    <string name="result">Результат</string>
+    <string name="get_course_by_id">Получить курс по ID</string>
+    <string name="insert_course">Добавить курс</string>
+    <string name="delete_course_by_id">Удалить курс по ID</string>
+    <string name="delete_all_courses">Удалить все курсы</string>
+    <string name="update_course_by_id">Обновить курс по ID</string>
+    <string name="enter_id_course">Введите ID курса</string>
+    <string name="enter_title_course">Введите название курса</string>
+</resources>
